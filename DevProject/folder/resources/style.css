@@ -1,0 +1,95 @@
+body {
+       transition: 0.8s;
+  background-color: blue;
+}
+#goodbutton {
+  background-color: #add8e6; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+#goodbutton:active {
+  background-color:  #00008b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+#evilbutton {
+  background-color: #FF0000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+#evilbutton:active {
+  background-color:  #8b0000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+#button {
+  background-color: #4DFF00; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+      transition: 0.8s;
+  font-size: 16px;
+}
+#button:active {
+  background-color: #3D0000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+.button:active {
+  background-color: #3C0050; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
