@@ -1,0 +1,96 @@
+body {
+       transition: 0.8s;
+   background-color: lightgray;
+   background-image: url("src/background.jpg");
+}
+#goodbutton {
+  border: double;
+  background-color: #add8e6; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+#goodbutton:active {
+  border: double;
+  background-color:  #00008b; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+#evilbutton {
+  border: double;
+  background-color: #FF0000; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+#evilbutton:active {
+  border: double;
+  background-color:  #8b0000; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+#button {
+  border: double;
+  background-color: #4DFF00; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
+.button {
+  border: double;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+      transition: 0.8s;
+  font-size: 16px;
+}
+#button:active {
+  border: double;
+  background-color: #3D0000; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+
+  font-size: 16px;
+}
+.button:active {
+  border: double;
+  background-color: #3C0050; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        transition: 0.8s;
+  font-size: 16px;
+}
