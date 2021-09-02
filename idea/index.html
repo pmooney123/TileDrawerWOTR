@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title id = "title">Hunt Tile Drawer v0.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/style.css"/>
+    <script src="resources/script.js"></script>
+</head>
+
+<body>
+    <audio id = "walk"><source src = src/walk.mp3></audio>
+    <img src="src/background.jpg" alt="tile.img" id = "background" width = 20%>
+    <p>Your Tile Here:</p>
+    <img src="src/bag.jpeg" alt="bag.img" id = "image" width = 60>
+    <p id = "displayarea"></p>
+    <button class="button" onclick="JavaScript:drawRandomTile()">Draw New Tile</button>
+    <button class ="button" onclick ="JavaScript:discardCurrentTile()" >Discard Tile (permanently)</button>
+    <button class ="button" onclick ="JavaScript:returnCurrentTile()" >Return Tile</button>
+    <button class ="button" onclick ="JavaScript:mithrilCoat()" >mithrilCoatandSting (return and get new)</button>
+
+
+    <p id = "displayarea">Press when you have started the Mordor Track</p>
+
+    <button id ="evilbutton" onclick="JavaScript:enterMordor()">Walk into Mordor</button>
+
+    <p id = "displayarea">Press when you play the corresponding Card</p>
+
+    <button id ="goodbutton" onclick="JavaScript:playElvenCloak()">Elven Cloaks</button>
+    <button id ="goodbutton" onclick="JavaScript:playElvenRope()">Elven Rope</button>
+    <button id ="goodbutton" onclick="JavaScript:playSmeagolHelps()">Smeagol Helps</button>
+    <button id ="goodbutton" onclick="JavaScript:playPhial()">Phial of G</button>
+    <button id ="evilbutton" onclick="JavaScript:playShelob()">Shelob's Lair</button>
+    <button id ="evilbutton" onclick="JavaScript:playOn()">On, On they Went</button>
+    <button id ="evilbutton" onclick="JavaScript:playRing()">The Ring is Mine!</button>
+    <button id ="evilbutton" onclick="JavaScript:playGive()">Give it to ussss!</button>
+
+    <p id = "text4">Available Tiles</p>
+
+
+    <img src="src/eyer.png" alt="tile.img" id = "eye1d" width = 60>
+    <img src="src/eyer.png" alt="tile.img" id = "eye2d" width = 60>
+    <img src="src/eyer.png" alt="tile.img" id = "eye3d" width = 60>
+    <img src="src/eyer.png" alt="tile.img" id = "eye4d" width = 60>
+
+    <img src="src/1.png" alt="tile.img" id = "one1d" width = 60>
+    <img src="src/1.png" alt="tile.img" id = "one2d" width = 60>
+
+    <img src="src/2.png" alt="tile.img" id = "two1d" width = 60>
+    <img src="src/2.png" alt="tile.img" id = "two2d" width = 60>
+
+    <img src="src/3.png" alt="tile.img" id = "three1d" width = 60>
+    <img src="src/3.png" alt="tile.img" id = "three2d" width = 60>
+    <img src="src/3.png" alt="tile.img" id = "three3d" width = 60>
+
+    <img src="src/0r.png" alt="tile.img" id = "zeroR1d" width = 60>
+    <img src="src/0r.png" alt="tile.img" id = "zeroR2d" width = 60>
+
+    <img src="src/1r.png" alt="tile.img" id = "oneR1d" width = 60>
+    <img src="src/1r.png" alt="tile.img" id = "oneR2d" width = 60>
+
+    <img src="src/2r.png" alt="tile.img" id = "twoR1d" width = 60>
+
+    <img src="src/reyers.png" alt="tile.img" id = "reyersd" width = 0>
+    <img src="src/r3s.png" alt="tile.img" id = "r3sd" width = 0>
+    <img src="src/rds.png" alt="tile.img" id = "rdsd" width = 0>
+    <img src="src/r1rs.png" alt="tile.img" id = "r1rsd" width = 0>
+
+    <img src="src/b0.png" alt="tile.img" id = "b0cd" width = 0>
+    <img src="src/b0.png" alt="tile.img" id = "b0rd" width = 0>
+    <img src="src/b-1.png" alt="tile.img" id = "b1d" width = 0>
+    <img src="src/b-2.png" alt="tile.img" id = "b2d" width = 0>
+
+    <p id = "text4">Drawn Tiles</p>
+
+    <img src="src/eyer.png" alt="tile.img" id = "eye1" width = 0>
+    <img src="src/eyer.png" alt="tile.img" id = "eye2" width = 0>
+    <img src="src/eyer.png" alt="tile.img" id = "eye3" width = 0>
+    <img src="src/eyer.png" alt="tile.img" id = "eye4" width = 0>
+
+    <img src="src/1.png" alt="tile.img" id = "one1" width = 0>
+    <img src="src/1.png" alt="tile.img" id = "one2" width = 0>
+
+    <img src="src/2.png" alt="tile.img" id = "two1" width = 0>
+    <img src="src/2.png" alt="tile.img" id = "two2" width = 0>
+
+    <img src="src/3.png" alt="tile.img" id = "three1" width = 0>
+    <img src="src/3.png" alt="tile.img" id = "three2" width = 0>
+    <img src="src/3.png" alt="tile.img" id = "three3" width = 0>
+
+    <img src="src/0r.png" alt="tile.img" id = "zeroR1" width = 0>
+    <img src="src/0r.png" alt="tile.img" id = "zeroR2" width = 0>
+
+    <img src="src/1r.png" alt="tile.img" id = "oneR1" width = 0>
+    <img src="src/1r.png" alt="tile.img" id = "oneR2" width = 0>
+
+    <img src="src/2r.png" alt="tile.img" id = "twoR1" width = 0>
+
+    <img src="src/reyers.png" alt="tile.img" id = "reyers" width = 0>
+    <img src="src/r3s.png" alt="tile.img" id = "r3s" width = 0>
+    <img src="src/rds.png" alt="tile.img" id = "rds" width = 0>
+    <img src="src/r1rs.png" alt="tile.img" id = "r1rs" width = 0>
+
+    <img src="src/b0.png" alt="tile.img" id = "b0c" width = 0>
+    <img src="src/b0.png" alt="tile.img" id = "b0r" width = 0>
+    <img src="src/b-1.png" alt="tile.img" id = "b1" width = 0>
+    <img src="src/b-2.png" alt="tile.img" id = "b2" width = 0>
+
+
+</body>
+
+<footer>
+    <p>Programmed by: Patrick</p>
+    <p>Tile Art by: Creators of WOTR Online Java program.</p>
+    <p>Mordor art: fineartamerica.com</p>
+    <p>Middle Earth art: Donato Giancola</p>
+
+
+</footer>
+
+
